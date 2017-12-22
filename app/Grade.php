@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Grade extends Model
 {
     protected $table = 'grades';
+    
     protected $fillable = [
         'math',     #高数
         'english',  #英语

@@ -20,7 +20,7 @@ class StudentController extends Controller
 //    }
 
 public function home(){
-    $grade = Auth::user()->Grade;
+    $grade = Auth::user()->grade;
 
     return view('stu.home', compact('grade'));
 }
