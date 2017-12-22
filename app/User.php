@@ -21,7 +21,7 @@ class User extends Authenticatable
 
     public function grade()
     {
-        return $this->hasOne('App\Grade');
+        return $this->hasOne('App\Grade','user_id','id');
     }
     protected static function rules()
     {
